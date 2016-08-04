@@ -522,7 +522,7 @@ apps/frappe/frappe/desk/page/applications/applications.js +46,Domains,域
 DocType: Blog Category,Blog Category,博客分类
 apps/frappe/frappe/model/mapper.py +82,Cannot map because following condition fails: ,无法对应，因为以下条件失败：
 DocType: User,Roles HTML,角色的HTML
-apps/frappe/frappe/core/doctype/user/user_list.js +12,Active,活动
+apps/frappe/frappe/core/doctype/user/user_list.js +12,Active,已激活
 apps/frappe/frappe/public/js/frappe/form/templates/grid_form.html +26,Insert Below,下面插入
 apps/frappe/frappe/custom/doctype/customize_form/customize_form.js +132,All customizations will be removed. Please confirm.,所有自定义更改都将被删除，请确认
 DocType: Page,Page HTML,页面的HTML
@@ -1083,7 +1083,7 @@ apps/frappe/frappe/core/doctype/doctype/doctype.py +398,Title field must be a va
 apps/frappe/frappe/config/core.py +7,Documents,文档
 apps/frappe/frappe/www/me.html +22,Edit Profile,编辑个人资料
 DocType: System Settings,Session Expiry in Hours e.g. 06:00,会话过期的时间(小时)，例如06:00
-DocType: Customize Form Field,"This field will appear only if the fieldname defined here has value OR the rules are true (examples): 
+DocType: Customize Form Field,"This field will appear only if the fieldname defined here has value OR the rules are true (examples):
 myfield
 eval:doc.myfield=='My Value'
 eval:doc.age&gt;18",该字段将显示仅在此处定义的字段名具有值或规则是真实的（例子）：MyField的EVAL：doc.myfield ==&#39;我的价值&#39;的eval：doc.age&gt; 18
@@ -1162,6 +1162,7 @@ apps/frappe/frappe/core/page/user_permissions/user_permissions.py +66,Cannot set
 apps/frappe/frappe/public/js/frappe/form/footer/assign_to.js +154,Add to To Do,添加到待办事项
 DocType: Footer Item,Company,公司
 apps/frappe/frappe/public/js/frappe/list/list_sidebar.html +20,Assigned To Me,分配给我的
+apps/frappe/frappe/public/js/frappe/list/list_sidebar.html +24,Show Images,显示图片
 apps/frappe/frappe/public/js/frappe/ui/messages.js +213,Verify Password,确认密码
 apps/frappe/frappe/public/js/frappe/form/footer/attachments.js +138,There were errors,有错误发生
 apps/frappe/frappe/core/doctype/communication/communication.js +19,Close,关闭
@@ -2019,3 +2020,6 @@ DocType: Email Group,Email Group,邮件组
 DocType: Email Group Member,Email Group Member,邮件组成员
 apps/frappe/frappe/config/setup.py +115,Bulk Update,批量更新
 apps/frappe/frappe/desk/page/chat/chat_main.html +12,Ctrl + Enter to post,按Ctrl + Enter提交
+apps/frappe/frappe/public/js/frappe/form/toolbar.js +176,New {0} (Ctrl+B),新建 {0} (Ctrl + B)
+apps/frappe/frappe/public/js/frappe/form/dashboard.js +334,{count} {name} {connector} {date},{date} - {count} (单位)
+apps/frappe/frappe/public/js/frappe/views/treeview.js +241,View List,列表形式
