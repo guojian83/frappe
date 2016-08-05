@@ -526,7 +526,7 @@ apps/frappe/frappe/core/doctype/user/user_list.js +12,Active,已激活
 apps/frappe/frappe/public/js/frappe/form/templates/grid_form.html +26,Insert Below,下面插入
 apps/frappe/frappe/custom/doctype/customize_form/customize_form.js +132,All customizations will be removed. Please confirm.,所有自定义更改都将被删除，请确认
 DocType: Page,Page HTML,页面的HTML
-apps/frappe/frappe/public/js/frappe/views/treeview.js +221,Further nodes can be only created under 'Group' type nodes,只能在“组”节点下新建节点
+apps/frappe/frappe/public/js/frappe/views/treeview.js +221,Further nodes can be only created under 'Group' type nodes,只能在“群组”节点下新建节点
 DocType: Web Page,Header,头
 apps/frappe/frappe/public/js/frappe/model/model.js +80,Unknown Column: {0},未知列： {0}
 DocType: Email Alert Recipient,Optional: Always send to these ids. Each email id on a new row,可选：总是发送给这些ID。在一个新行的每一个电子邮件ID
@@ -1349,7 +1349,7 @@ apps/frappe/frappe/desk/doctype/note/note_list.js +3,Notes,便签
 DocType: User,Restrict user from this IP address only. Multiple IP addresses can be added by separating with commas. Also accepts partial IP addresses like (111.111.111),仅此IP地址限制用户。多个IP地址，可以通过用逗号分隔的补充。也接受像（111.111.111）部分的IP地址
 DocType: Communication,From,从
 DocType: Website Theme,Google Font (Heading),谷歌字体（标题）
-apps/frappe/frappe/public/js/frappe/views/treeview.js +165,Select a group node first.,请先选择一个组节点。
+apps/frappe/frappe/public/js/frappe/views/treeview.js +165,Select a group node first.,请先选择一个群组节点。
 apps/frappe/frappe/public/js/frappe/ui/toolbar/awesome_bar.js +191,Find {0} in {1},在{1}中找到{0}
 DocType: Email Account,"Append as communication against this DocType (must have fields, ""Status"", ""Subject"")",作为此文档类型的交流信息添加(必须有“状态”和“主题”字段)
 DocType: DocType,Allow Import via Data Import Tool,允许通过数据导入工具导入
@@ -1681,7 +1681,7 @@ apps/frappe/frappe/public/js/frappe/misc/pretty_date.js +48,{0} months ago,{0}�
 apps/frappe/frappe/public/js/frappe/model/model.js +18,Created By,创建人
 DocType: Workflow State,resize-horizontal,调整大小，水平
 DocType: Note,Content,内容
-apps/frappe/frappe/public/js/frappe/views/treeview.js +220,Group Node,组节点
+apps/frappe/frappe/public/js/frappe/views/treeview.js +220,Group Node,群组节点
 DocType: Communication,Notification,通知
 DocType: Web Form,Go to this url after completing the form.,填写表格后打开此网址。
 DocType: DocType,Document,文档
@@ -1876,7 +1876,7 @@ DocType: Workflow State,folder-open,folder-open
 apps/frappe/frappe/core/page/desktop/all_applications_dialog.html +1,Search Application,搜索应用程序
 apps/frappe/frappe/config/website.py +33,Single Post (article).,单个帖子（文章）。
 apps/frappe/frappe/public/js/frappe/list/list_sidebar.html +9,Reports,报告
-DocType: Page,No,No
+DocType: Page,No,否
 DocType: Property Setter,Set Value,设定值
 apps/frappe/frappe/custom/doctype/customize_form/customize_form.js +212,Hide field in form,在表单隐藏字段
 apps/frappe/frappe/public/js/frappe/desk.js +76,"The application has been updated to a new version, please refresh this page",该应用程序已被更新到新版本，请刷新本页面
@@ -2023,3 +2023,5 @@ apps/frappe/frappe/desk/page/chat/chat_main.html +12,Ctrl + Enter to post,按Ctr
 apps/frappe/frappe/public/js/frappe/form/toolbar.js +176,New {0} (Ctrl+B),新建 {0} (Ctrl + B)
 apps/frappe/frappe/public/js/frappe/form/dashboard.js +334,{count} {name} {connector} {date},{date} - {count} (单位)
 apps/frappe/frappe/public/js/frappe/views/treeview.js +241,View List,列表形式
+apps/frappe/frappe/public/js/frappe/form/quick_entry.js +94,Ctrl+enter to save,按Ctrl+enter保存
+apps/frappe/frappe/public/js/frappe/form/quick_entry.js +94,Edit in full page,整页模式编辑
