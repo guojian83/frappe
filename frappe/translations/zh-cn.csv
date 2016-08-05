@@ -2025,3 +2025,4 @@ apps/frappe/frappe/public/js/frappe/form/dashboard.js +334,{count} {name} {conne
 apps/frappe/frappe/public/js/frappe/views/treeview.js +241,View List,列表形式
 apps/frappe/frappe/public/js/frappe/form/quick_entry.js +94,Ctrl+enter to save,按Ctrl+enter保存
 apps/frappe/frappe/public/js/frappe/form/quick_entry.js +94,Edit in full page,整页模式编辑
+apps/frappe/frappe/public/js/legacy/form.js +356,Submit this document to confirm,请确认后提交

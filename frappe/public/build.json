@@ -57,6 +57,7 @@
 	],
 	"js/libs.min.js": [
 		"public/js/lib/jquery/jquery-ui.min.js",
+		"public/js/lib/jquery/i18n/datepicker-zh-CN.js",
 		"public/js/lib/Sortable.min.js",
 		"public/js/lib/tag-it.min.js",
 		"public/js/lib/notify.js",
