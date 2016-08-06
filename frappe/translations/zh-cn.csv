@@ -862,7 +862,7 @@ DocType: File,Preview HTML,预览HTML
 apps/frappe/frappe/desk/doctype/todo/todo.py +20,Assigned to {0}: {1},分配给{0}：{1}
 DocType: DocField,Percent,百分之
 apps/frappe/frappe/public/js/frappe/views/reports/query_report.js +344,Please set filters,请设置过滤器
-apps/frappe/frappe/public/js/frappe/form/linked_with.js +25,Linked With,挂具
+apps/frappe/frappe/public/js/frappe/form/linked_with.js +25,Linked With,链接至
 DocType: Workflow State,book,书
 DocType: Website Settings,Landing Page,着陆页
 apps/frappe/frappe/core/page/data_import_tool/data_import_tool.js +81,"Import Request Queued. This may take a few moments, please be patient.",导入请求排队。这可能需要几分钟，请耐心等待。
