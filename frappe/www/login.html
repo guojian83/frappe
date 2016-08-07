@@ -12,20 +12,20 @@
 <div class="login-content">
 	<form class="form-signin form-login" role="form">
 
-		<div class="login_header">Login</div>
+		<div class="login_header">汇达系统</div>
 
 		<input type="text" id="login_email"
-			class="form-control" placeholder="{{ _('Email address') }}" required autofocus>
+			class="form-control" placeholder="Email邮箱" required autofocus>
 
 		<input type="password" id="login_password"
-			class="form-control" placeholder="{{ _('Password') }}" required>
+			class="form-control" placeholder="密码" required>
 
 		<div>
 			<!-- <p style="float:left" class="text-center small"><input type="checkbox" value="remember-me"> Remember me </p> -->
-			<p style="float:right" class="text-center small"><a href="#forgot">{{ _("Forgot Password?") }}</a></p>
+			<p style="float:right" class="text-center small"><a href="#forgot">忘记密码</a></p>
 		</div>
 
-		<button class="btn btn-lg btn-default btn-block btn-login" type="submit">{{ _("Sign in") }}</button>
+		<button class="btn btn-lg btn-default btn-block btn-login" type="submit">登陆</button>
 		<div class='social-logins'>
 
 		{%- if social_login -%}
@@ -76,11 +76,11 @@
 
 	<form class="form-signin form-forgot hide" role="form">
 		<input type="email" id="forgot_email"
-			class="form-control" placeholder="{{ _('Email Id') }}" required autofocus>
+			class="form-control" placeholder="Email邮箱" required autofocus>
 		<br>
-		<button class="btn btn-lg btn-default btn-block btn-forgot" type="submit">{{ _("Send Password") }}</button>
+		<button class="btn btn-lg btn-default btn-block btn-forgot" type="submit">发送密码</button>
 		<p class="text-center small">
-		<br><a href="#login" class="blue">{{ _("Back to Login") }}</a>
+		<br><a href="#login" class="blue">回到登陆页</a>
 	</p>
 	</form>
 </div>
