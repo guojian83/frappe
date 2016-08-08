@@ -324,8 +324,15 @@ frappe.ui.form.Dashboard = Class.extend({
 					return moment(date).format("MMM").toUpperCase();
 				},
 				displayLegend: false,
-				legend: [5, 10, 15, 20]
-				// subDomainTextFormat: "%d",
+				legend: [5, 10, 15, 20],
+				subDomainTextFormat: "%d",
+				subDomainDateFormat: function(date) {
+					return moment(date).format("LL"); // Use the moment library to format the Date
+				},
+				subDomainTitleFormat: {
+					empty: "{date}",
+					filled: __("{count} {name} {connector} {date}")
+				},
 			});
 
 			// center the heatmap
