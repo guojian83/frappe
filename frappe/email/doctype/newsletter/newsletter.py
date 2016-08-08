@@ -37,7 +37,7 @@ class Newsletter(Document):
 			self.validate_send()
 
 			# using default queue with a longer timeout as this isn't a scheduled task
-			enqueue(send_newsletter, queue='default', timeout=1500, event='send_newsletter', newsletter=self.name)
+			enqueue(send_newsletter, queue='default', timeout=3000, event='send_newsletter', newsletter=self.name)
 
 		else:
 			self.queue_all()
@@ -77,15 +77,6 @@ class Newsletter(Document):
 		if self.get("__islocal"):
 			throw(_("Please save the Newsletter before sending"))
 		check_email_limit(self.recipients)
-
-@frappe.whitelist()
-def get_lead_options():
-	return {
-		"sources": ["All"] + filter(None,
-			frappe.db.sql_list("""select distinct source from tabLead""")),
-		"statuses": ["All"] + filter(None,
-			frappe.db.sql_list("""select distinct status from tabLead"""))
-	}
 
 
 @frappe.whitelist(allow_guest=True)

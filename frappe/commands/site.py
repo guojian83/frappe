@@ -20,12 +20,9 @@ from frappe.utils import touch_file, get_site_path
 @click.option('--install-app', multiple=True, help='Install app after installation')
 def new_site(site, mariadb_root_username=None, mariadb_root_password=None, admin_password=None, verbose=False, install_apps=None, source_sql=None, force=None, install_app=None, db_name=None):
 	"Create a new site"
-	if not db_name:
-		db_name = hashlib.sha1(site).hexdigest()[:10]
-
 	frappe.init(site=site, new_site=True)
 
-	_new_site(db_name, site, mariadb_root_username=mariadb_root_username, mariadb_root_password=mariadb_root_password, admin_password=admin_password,
+	_new_site(None, site, mariadb_root_username=mariadb_root_username, mariadb_root_password=mariadb_root_password, admin_password=admin_password,
 			verbose=verbose, install_apps=install_app, source_sql=source_sql, force=force)
 
 	if len(frappe.utils.get_sites()) == 1:
@@ -34,6 +31,9 @@ def new_site(site, mariadb_root_username=None, mariadb_root_password=None, admin
 def _new_site(db_name, site, mariadb_root_username=None, mariadb_root_password=None, admin_password=None,
 	verbose=False, install_apps=None, source_sql=None,force=False, reinstall=False):
 	"""Install a new Frappe site"""
+
+	if not db_name:
+		db_name = hashlib.sha1(site).hexdigest()[:16]
 
 	from frappe.installer import install_db, make_site_dirs
 	from frappe.installer import install_app as _install_app
@@ -95,8 +95,10 @@ def restore(context, sql_file_path, mariadb_root_username=None, mariadb_root_pas
 
 	site = get_site(context)
 	frappe.init(site=site)
-	db_name = db_name or frappe.conf.db_name or hashlib.sha1(site).hexdigest()[:10]
-	_new_site(db_name, site, mariadb_root_username=mariadb_root_username, mariadb_root_password=mariadb_root_password, admin_password=admin_password, verbose=context.verbose, install_apps=install_app, source_sql=sql_file_path, force=context.force)
+	_new_site(frappe.conf.db_name, site, mariadb_root_username=mariadb_root_username,
+		mariadb_root_password=mariadb_root_password, admin_password=admin_password,
+		verbose=context.verbose, install_apps=install_app, source_sql=sql_file_path,
+		force=context.force)
 
 	# Extract public and/or private files to the restored site, if user has given the path
 	if with_public_files:
@@ -131,7 +133,8 @@ def reinstall(context, yes=False):
 		frappe.destroy()
 
 	frappe.init(site=site)
-	_new_site(frappe.conf.db_name, site, verbose=context.verbose, force=True, reinstall=True, install_apps=installed)
+	_new_site(frappe.conf.db_name, site, verbose=context.verbose, force=True, reinstall=True,
+		install_apps=installed)
 
 @click.command('install-app')
 @click.argument('app')
@@ -282,16 +285,17 @@ def remove_from_installed_apps(context, app):
 
 @click.command('uninstall-app')
 @click.argument('app')
+@click.option('--yes', '-y', help='To bypass confirmation prompt for uninstalling the app', is_flag=True, default=False, multiple=True)
 @click.option('--dry-run', help='List all doctypes that will be deleted', is_flag=True, default=False)
 @pass_context
-def uninstall(context, app, dry_run=False):
+def uninstall(context, app, dry_run=False, yes=False):
 	"Remove app and linked modules from site"
 	from frappe.installer import remove_app
 	for site in context.sites:
 		try:
 			frappe.init(site=site)
 			frappe.connect()
-			remove_app(app, dry_run)
+			remove_app(app, dry_run, yes)
 		finally:
 			frappe.destroy()
 
@@ -303,7 +307,7 @@ def uninstall(context, app, dry_run=False):
 @click.option('--archived-sites-path')
 def drop_site(site, root_login='root', root_password=None, archived_sites_path=None):
 	"Remove site from database and filesystem"
-	from frappe.installer import get_current_host, make_connection
+	from frappe.installer import get_root_connection
 	from frappe.model.db_schema import DbManager
 	from frappe.utils.backups import scheduled_backup
 
@@ -312,9 +316,9 @@ def drop_site(site, root_login='root', root_password=None, archived_sites_path=N
 	scheduled_backup(ignore_files=False, force=True)
 
 	db_name = frappe.local.conf.db_name
-	frappe.local.db = make_connection(root_login, root_password)
+	frappe.local.db = get_root_connection(root_login, root_password)
 	dbman = DbManager(frappe.local.db)
-	dbman.delete_user(db_name, get_current_host())
+	dbman.delete_user(db_name)
 	dbman.drop_database(db_name)
 
 	if not archived_sites_path:
