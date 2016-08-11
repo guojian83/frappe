@@ -599,7 +599,7 @@ apps/frappe/frappe/email/doctype/email_alert/email_alert.py +40,Cannot set Email
 apps/frappe/frappe/public/js/frappe/form/templates/grid_form.html +4,Editing Row,编辑行
 DocType: Workflow Action,Workflow Action Master,工作流操作大师
 DocType: Custom Field,Field Type,字段类型
-apps/frappe/frappe/utils/data.py +435,only.,而已。
+apps/frappe/frappe/utils/data.py +435,only.,整。
 apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +510,Descending,降
 apps/frappe/frappe/email/receive.py +57,Invalid Mail Server. Please rectify and try again.,无效的邮件服务器，请纠正然后重试。
 DocType: Dropbox Backup,Dropbox Backup,Dropbox的备份
@@ -1295,7 +1295,7 @@ apps/frappe/frappe/core/page/data_import_tool/exporter.py +237,Type:,类型：
 DocType: Communication,Unshared,非共享
 apps/frappe/frappe/desk/moduleview.py +63,Module Not Found,模块未找到
 DocType: User,Location,位置
-,Permitted Documents For User,许可文件对于用户
+,Permitted Documents For User,用户许可的文档类型
 apps/frappe/frappe/core/doctype/docshare/docshare.py +42,"You need to have ""Share"" permission",你需要有“共享”权限
 DocType: Communication,Assignment Completed,转让完成
 apps/frappe/frappe/public/js/frappe/form/grid.js +480,Bulk Edit {0},批量编辑{0}
