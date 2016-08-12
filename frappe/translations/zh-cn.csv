@@ -2028,8 +2028,8 @@ apps/frappe/frappe/public/js/legacy/form.js +356,Submit this document to confirm
 apps/frappe/frappe/public/js/frappe/list/list_sidebar.html +24,Show Images,显示图片
 apps/frappe/frappe/templates/includes/login/login.js +133,Invalid Login,登陆失败
 apps/frappe/frappe/public/js/frappe/views/communication.js +51,To,发送至
-apps/frappe/frappe/public/js/frappe/views/communication.js +52,CC & STANDARD REPLY,抄送及回复
 apps/frappe/frappe/public/js/frappe/views/communication.js +53,CC,抄送
 apps/frappe/frappe/public/js/frappe/views/communication.js +66,Send me a copy,同时发送自己
 apps/frappe/frappe/public/js/frappe/views/communication.js +18,Send,发送
 apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +574,Save As,另存为
+apps/frappe/frappe/public/js/frappe/request.js +75,The resource you are looking for is not available,您找的资源不存在

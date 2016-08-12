@@ -49,7 +49,7 @@ frappe.views.CommunicationComposer = Class.extend({
 	get_fields: function() {
 		return [
 			{label:__("To"), fieldtype:"Data", reqd: 0, fieldname:"recipients"},
-			{fieldtype: "Section Break", collapsible: 1, label: __("CC & Standard Reply")},
+			{fieldtype: "Section Break", collapsible: 1, label: "抄送及回复"},
 			{label:__("CC"), fieldtype:"Data", fieldname:"cc"},
 			{label:__("Standard Reply"), fieldtype:"Link", options:"Standard Reply",
 				fieldname:"standard_reply"},
