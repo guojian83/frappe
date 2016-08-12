@@ -74,7 +74,7 @@ small {
 sub,
 sup {
   position: relative;
-  font-size: 75%;
+  font-size: 80%;
   line-height: 0;
   vertical-align: baseline;
 }
@@ -1227,7 +1227,7 @@ h2 .small,
 .h2 .small,
 h3 .small,
 .h3 .small {
-  font-size: 65%;
+  font-size: 70%;
 }
 h4,
 .h4,
@@ -1250,7 +1250,7 @@ h5 .small,
 .h5 .small,
 h6 .small,
 .h6 .small {
-  font-size: 75%;
+  font-size: 80%;
 }
 h1,
 .h1 {
@@ -4721,7 +4721,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  font-size: 80%;
   font-weight: bold;
   line-height: 1;
   color: inherit;
