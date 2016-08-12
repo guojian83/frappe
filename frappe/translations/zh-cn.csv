@@ -9,7 +9,7 @@ DocType: About Us Settings,Website,网站
 DocType: User,Facebook Username,Facebook的用户名
 DocType: System Settings,Note: Multiple sessions will be allowed in case of mobile device,注：多个会议将在移动设备的情况下，被允许
 apps/frappe/frappe/email/queue.py +155,Cannot send this email. You have crossed the sending limit of {0} emails for this month.,无法发送此邮件。你已经越过了{0}电子邮件发送限制这个月。
-apps/frappe/frappe/public/js/legacy/form.js +745,Permanently Submit {0}?,永久提交{0} ？
+apps/frappe/frappe/public/js/legacy/form.js +745,Permanently Submit {0}?,确认提交{0} ？
 apps/frappe/frappe/client.py +171,Invalid file path: {0},无效的文件路径：{0}
 DocType: Workflow State,eye-open,eye-open
 DocType: Email Queue,Send After,发送后
@@ -2027,3 +2027,9 @@ apps/frappe/frappe/public/js/frappe/form/quick_entry.js +94,Edit in full page,�
 apps/frappe/frappe/public/js/legacy/form.js +356,Submit this document to confirm,请确认后提交
 apps/frappe/frappe/public/js/frappe/list/list_sidebar.html +24,Show Images,显示图片
 apps/frappe/frappe/templates/includes/login/login.js +133,Invalid Login,登陆失败
+apps/frappe/frappe/public/js/frappe/views/communication.js +51,To,发送至
+apps/frappe/frappe/public/js/frappe/views/communication.js +52,CC & STANDARD REPLY,抄送及回复
+apps/frappe/frappe/public/js/frappe/views/communication.js +53,CC,抄送
+apps/frappe/frappe/public/js/frappe/views/communication.js +66,Send me a copy,同时发送自己
+apps/frappe/frappe/public/js/frappe/views/communication.js +18,Send,发送
+apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +574,Save As,另存为
