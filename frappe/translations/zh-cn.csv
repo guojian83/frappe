@@ -1098,7 +1098,7 @@ apps/frappe/frappe/core/page/permission_manager/permission_manager.js +54,Select
 DocType: Communication,Deleted,已删除
 DocType: Workflow State,adjust,调整
 DocType: Website Settings,Disable Customer Signup link in Login page,禁用登录页面的客户注册链接
-apps/frappe/frappe/core/report/todo/todo.py +20,Assigned To/Owner,指配给/所有者
+apps/frappe/frappe/core/report/todo/todo.py +20,Assigned To/Owner,分配给/所有者
 DocType: Workflow State,arrow-left,向左箭头
 apps/frappe/frappe/desk/page/applications/applications.js +77,Installed,已安装
 apps/frappe/frappe/desk/page/applications/applications.js +47,Developer Tools,开发工具
@@ -1465,7 +1465,7 @@ apps/frappe/frappe/model/rename_doc.py +105,{0} not allowed to be renamed,{0}不
 DocType: Custom Script,Custom Script,自定义脚本
 DocType: Contact Us Settings,Address Line 2,地址行2
 DocType: Communication,Reference,参考
-apps/frappe/frappe/public/js/frappe/model/model.js +26,Assigned To,指配给
+apps/frappe/frappe/public/js/frappe/model/model.js +26,Assigned To,分配给
 apps/frappe/frappe/core/doctype/user/user.py +206,Verify Your Account,验证您的帐户
 apps/frappe/frappe/email/doctype/email_group/email_group.js +25,Action,行动
 apps/frappe/frappe/core/page/data_import_tool/exporter.py +238,Info:,信息：
