@@ -599,7 +599,7 @@ apps/frappe/frappe/email/doctype/email_alert/email_alert.py +40,Cannot set Email
 apps/frappe/frappe/public/js/frappe/form/templates/grid_form.html +4,Editing Row,编辑行
 DocType: Workflow Action,Workflow Action Master,工作流操作大师
 DocType: Custom Field,Field Type,字段类型
-apps/frappe/frappe/utils/data.py +435,only.,整。
+apps/frappe/frappe/utils/data.py +435,only.,整
 apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +510,Descending,降
 apps/frappe/frappe/email/receive.py +57,Invalid Mail Server. Please rectify and try again.,无效的邮件服务器，请纠正然后重试。
 DocType: Dropbox Backup,Dropbox Backup,Dropbox的备份
