@@ -124,7 +124,7 @@ frappe.views.ReportView = frappe.ui.Listing.extend({
 			me.run();
 		});
 
-		this.page.add_menu_item(__("New {0}", [this.doctype]), function() {
+		this.page.add_menu_item(__("New {0}", [__(this.doctype)]), function() {
 			me.make_new_doc(me.doctype);
 		}, true);
 
