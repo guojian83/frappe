@@ -1572,7 +1572,7 @@ DocType: Web Page,Add code as &lt;script&gt;,添加为script标签
 apps/frappe/frappe/core/page/data_import_tool/data_import_main.html +7,Select Type,选择类型
 apps/frappe/frappe/config/core.py +57,A log of request errors,日志请求错误的
 DocType: Letter Head,Letter Head,信头
-DocType: DocType,Quick Entry,快速入门
+DocType: DocType,Quick Entry,快速填写
 apps/frappe/frappe/core/doctype/file/file.py +205,No permission to write / remove.,没有写入/删除的权限
 apps/frappe/frappe/print/page/print_format_builder/print_format_builder_layout.html +3,Drag elements from the sidebar to add. Drag them back to trash.,从侧边栏拖动元素添加，将元素拖回可以删除。
 DocType: Workflow State,resize-small,调整大小小
