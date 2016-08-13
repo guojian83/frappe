@@ -1203,7 +1203,7 @@ apps/frappe/frappe/core/doctype/user/user.py +360,"Username should not contain a
 DocType: Event,Every Week,每周
 DocType: Custom Field,Is Mandatory Field,是否必须项
 DocType: User,Website User,网站用户
-apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +10,Not equals,不等于
+apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +10,Not Equals,不等于
 DocType: Website Script,Script to attach to all web pages.,插入到所有网页的脚本
 DocType: Web Form,Allow Multiple,允许多个
 apps/frappe/frappe/public/js/frappe/form/templates/form_sidebar.html +33,Assign,分配
