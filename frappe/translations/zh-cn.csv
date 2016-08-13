@@ -48,7 +48,7 @@ apps/frappe/frappe/www/login.html +18,Email Address,邮件提醒
 DocType: Workflow State,th-large,th-large
 DocType: Communication,Unread Notification Sent,未读发送通知
 apps/frappe/frappe/public/js/frappe/misc/tools.js +8,Export not allowed. You need {0} role to export.,不允许导出，您没有{0}的角色。
-apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +11,Not Like,不喜欢
+apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +11,Not Like,不像
 apps/frappe/frappe/custom/doctype/customize_form/customize_form.js +177,Set the display label for the field,为此字段设置显示标签
 apps/frappe/frappe/model/document.py +850,Incorrect value: {0} must be {1} {2},值有错误，{0}必须是{1} {2}
 apps/frappe/frappe/config/setup.py +238,"Change field properties (hide, readonly, permission etc.)",更改字段属性（隐藏，只读，权限等）
@@ -968,7 +968,7 @@ DocType: DocField,Text Editor,文本编辑器
 apps/frappe/frappe/config/website.py +69,Settings for About Us Page.,关于我们页面的设置。
 apps/frappe/frappe/print/page/print_format_builder/print_format_builder.js +561,Edit Custom HTML,编辑自定义HTML
 DocType: Error Snapshot,Error Snapshot,错误快照
-apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +8,In,在
+apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +8,In,包含在
 DocType: Email Alert,Value Change,更改值
 DocType: Standard Reply,Standard Reply,标准回复
 apps/frappe/frappe/custom/doctype/customize_form/customize_form.js +198,Width of the input box,输入框的宽度
@@ -1794,7 +1794,7 @@ DocType: Blog Category,Published,发布时间
 apps/frappe/frappe/templates/emails/auto_reply.html +1,Thank you for your email,谢谢您的邮件
 DocType: DocField,Small Text,短文
 apps/frappe/frappe/core/doctype/user/user.py +635,Administrator accessed {0} on {1} via IP Address {2}.,管理员访问{0}在{1}通过IP地址{2}。
-apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +6,Equals,等号
+apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +6,Equals,等于
 apps/frappe/frappe/core/doctype/doctype/doctype.py +322,Options 'Dynamic Link' type of field must point to another Link Field with options as 'DocType',选择“动态链接”类型的字段都必须指向另一个链接字段的选项为'的DocType“
 DocType: About Us Settings,Team Members Heading,团队成员标题
 DocType: DocField,Do not allow user to change after set the first time,不允许用户首次设置后再更改
@@ -1942,7 +1942,7 @@ apps/frappe/frappe/public/js/frappe/form/templates/form_sidebar.html +58,Current
 DocType: DocField,Default,默认
 apps/frappe/frappe/public/js/frappe/form/link_selector.js +140,{0} added,{0} 成功添加
 apps/frappe/frappe/email/doctype/email_group/email_group.py +42,{0} subscribers added,{0}新增用户
-apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +9,Not In,在不
+apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +9,Not In,不包含在
 DocType: Workflow State,star,star
 apps/frappe/frappe/public/js/frappe/ui/filters/filters.js +173,values separated by commas,用逗号分隔的值
 apps/frappe/frappe/core/doctype/doctype/doctype.py +311,Max width for type Currency is 100px in row {0},行{0}中，货币类型的最大宽度是100像素
@@ -2033,3 +2033,4 @@ apps/frappe/frappe/public/js/frappe/views/communication.js +66,Send me a copy,�
 apps/frappe/frappe/public/js/frappe/views/communication.js +18,Send,发送
 apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +574,Save As,另存为
 apps/frappe/frappe/public/js/frappe/request.js +75,The resource you are looking for is not available,您找的资源不存在
+apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +7,Like,像
