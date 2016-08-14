@@ -1500,7 +1500,7 @@ apps/frappe/frappe/core/page/data_import_tool/data_import_main.html +30,Download
 DocType: Workflow State,hand-right,hand-right
 DocType: Website Settings,Subdomain,子域名
 apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.js +403,Region,区域
-apps/frappe/frappe/public/js/frappe/form/workflow.js +35,Current status,现状
+apps/frappe/frappe/public/js/frappe/form/workflow.js +35,Current status,当前状态
 DocType: Web Form,Allow Delete,允许删除
 DocType: Email Alert,Message Examples,消息示例
 DocType: Web Form,Login Required,需要登录信息
