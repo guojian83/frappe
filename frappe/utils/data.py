@@ -9,7 +9,7 @@ import operator
 import re, urllib, datetime, math
 import babel.dates
 from dateutil import parser
-from num2words import num2words
+from num2Cny import num2Cny
 import HTMLParser
 from html2text import html2text
 
@@ -448,9 +448,9 @@ def in_words(integer, in_million=True):
 	locale = 'en_IN' if not in_million else frappe.local.lang
 	integer = int(integer)
 	try:
-		ret = num2words(integer, lang=locale)
+		ret = num2Cny(integer, lang=locale)
 	except NotImplementedError:
-		ret = num2words(integer, lang='en')
+		ret = num2Cny(integer, lang='en')
 	return ret.replace('-', ' ')
 
 def is_html(text):

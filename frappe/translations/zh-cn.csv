@@ -2034,3 +2034,21 @@ apps/frappe/frappe/public/js/frappe/views/communication.js +18,Send,发送
 apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +574,Save As,另存为
 apps/frappe/frappe/public/js/frappe/request.js +75,The resource you are looking for is not available,您找的资源不存在
 apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +7,Like,像
+,WAN,万
+,YI,亿
+,YUAN,圆
+,JIAO,角
+,FEN,分
+,QIAN,仟
+,BAI,佰
+,SHI,拾
+,ling,零
+,yi,壹
+,er,贰
+,san,叁
+,si,肆
+,wu,伍
+,liu,陆
+,qi,柒
+,ba,捌
+,jiu,玖  
