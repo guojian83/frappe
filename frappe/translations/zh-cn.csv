@@ -21,7 +21,7 @@ DocType: DocField,Options,选项
 apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +402,Cannot edit standard fields,不能编辑标准字段
 DocType: Print Format,Print Format Builder,打印格式生成器
 apps/frappe/frappe/public/js/frappe/ui/page.js +4,Form,表
-DocType: Report,Report Manager,报告管理
+DocType: Report,Report Manager,报告经理
 DocType: Workflow,Document States,文档状态
 apps/frappe/frappe/public/js/frappe/views/pageview.js +102,Sorry! I could not find what you were looking for.,抱歉，无法找你要的信息。
 apps/frappe/frappe/config/core.py +42,Logs,日志
@@ -952,7 +952,7 @@ DocType: DocShare,DocShare,文档分享
 DocType: Event,Friday,星期五
 DocType: Report,Add Total Row,添加总计行
 apps/frappe/frappe/core/page/permission_manager/permission_manager_help.html +19,For example if you cancel and amend INV004 it will become a new document INV004-1. This helps you to keep track of each amendment.,例如如取消和修订INV004将成为一个新的文档INV004-1，这有利于你跟踪每次修订。
-DocType: Workflow Document State,0 - Draft; 1 - Submitted; 2 - Cancelled,0 - 草案; 1 - 已提交; 2 - 已取消
+DocType: Workflow Document State,0 - Draft; 1 - Submitted; 2 - Cancelled,0 - 草稿; 1 - 已提交; 2 - 已取消
 DocType: File,Attached To DocType,已附加到文档类型
 DocType: DocField,Int,整数
 DocType: Page,Title,标题
@@ -1397,7 +1397,7 @@ apps/frappe/frappe/public/js/frappe/form/footer/assign_to.js +165,Notify by Emai
 DocType: Web Form,Allow Edit,允许编辑
 apps/frappe/frappe/core/doctype/file/file_list.js +118,Paste,粘贴
 apps/frappe/frappe/workflow/doctype/workflow/workflow.py +64,Cannot change state of Cancelled Document. Transition row {0},不能改变已取消文档的状态。过渡行{0}
-DocType: Workflow,"Rules for how states are transitions, like next state and which role is allowed to change state etc.",规则的状态是如何过渡，就像下一个状态以及作用是允许改变状态等。
+DocType: Workflow,"Rules for how states are transitions, like next state and which role is allowed to change state etc.",规则的状态是如何转换，就像下一个状态以及作用是允许改变状态等。
 apps/frappe/frappe/desk/form/save.py +25,{0} {1} already exists,{0} {1}已经存在
 apps/frappe/frappe/email/doctype/email_account/email_account.py +72,Append To can be one of {0},追加到可以是一个{0}
 DocType: User,Github Username,Github用户名
@@ -1470,7 +1470,7 @@ apps/frappe/frappe/core/doctype/user/user.py +206,Verify Your Account,验证您�
 apps/frappe/frappe/email/doctype/email_group/email_group.js +25,Action,行动
 apps/frappe/frappe/core/page/data_import_tool/exporter.py +238,Info:,信息：
 DocType: Custom Field,Permission Level,权限级别
-DocType: User,Send Notifications for Transactions I Follow,发送通知进行交易我跟随
+DocType: User,Send Notifications for Transactions I Follow,通知我所跟踪的交易
 apps/frappe/frappe/core/doctype/doctype/doctype.py +533,"{0}: Cannot set Submit, Cancel, Amend without Write",{0} ：没有写入的情况下不能设置“提交”，“取消”，“修订”
 apps/frappe/frappe/public/js/frappe/form/footer/attachments.js +83,Are you sure you want to delete the attachment?,您确定要删除的附件？
 apps/frappe/frappe/model/base_document.py +514,"{0}: '{1}' will get truncated, as max characters allowed is {2}",{0}：“{1}”将被截断，作为最大允许的字符是{2}
@@ -1686,7 +1686,7 @@ DocType: Web Form,Go to this url after completing the form.,填写表格后打�
 DocType: DocType,Document,文档
 apps/frappe/frappe/core/doctype/doctype/doctype.py +131,Series {0} already used in {1},系列{0}已经被{1}使用
 DocType: DocField,Code,码
-DocType: Workflow,"All possible Workflow States and roles of the workflow. Docstatus Options: 0 is""Saved"", 1 is ""Submitted"" and 2 is ""Cancelled""",所有可能的工作流状态和工作流程的作用。 Docstatus选项：0是“拯救”，1“已提交”和2“取消”
+DocType: Workflow,"All possible Workflow States and roles of the workflow. Docstatus Options: 0 is""Saved"", 1 is ""Submitted"" and 2 is ""Cancelled""",所有可能的工作流状态和工作流程的作用。 文档状态选项：0是“已保存”，1“已提交”和2“已取消”
 DocType: Website Theme,Footer Text Color,页脚文本颜色
 apps/frappe/frappe/core/page/permission_manager/permission_manager_help.html +24,"Permissions at level 0 are Document Level permissions, i.e. they are primary for access to the document.",0级权限是文档级的权限，也就是说，它们是主要用于访问文件。
 DocType: Print Format,Print Format,打印格式
@@ -1755,7 +1755,7 @@ DocType: Role,Role Name,角色名称
 apps/frappe/frappe/config/core.py +27,Script or Query reports,脚本或查询报告
 DocType: Workflow Document State,Workflow Document State,工作流文档状态
 apps/frappe/frappe/core/page/permission_manager/permission_manager_help.html +32,"To give acess to a role for only specific records, check the Apply User Permissions. User Permissions are used to limit users with such role to specific records.",为了让接取到了只有特定记录的作用，检查应用的用户权限。用户权限用于限制用户这样的角色，具体的记录。
-apps/frappe/frappe/workflow/doctype/workflow/workflow.py +70,Cannot cancel before submitting. See Transition {0},不能在提交前取消，详情参考过渡{0}
+apps/frappe/frappe/workflow/doctype/workflow/workflow.py +70,Cannot cancel before submitting. See Transition {0},不能在提交前取消，详情参考转换{0}
 apps/frappe/frappe/www/print.py +184,Print Format {0} is disabled,打印格式{0}被禁用
 DocType: Email Alert,Send days before or after the reference date,之前或基准日后发送天
 DocType: User,Allow user to login only after this hour (0-24),仅允许用户在此时后登录（0-24时）
@@ -1846,7 +1846,7 @@ apps/frappe/frappe/public/js/frappe/model/model.js +106,Unable to load: {0},无�
 DocType: DocField,Read Only,只读
 apps/frappe/frappe/email/doctype/email_group/email_group.js +43,New Newsletter,新的通讯
 DocType: Print Settings,Send Print as PDF,使用PDF格式发送打印
-DocType: Workflow Transition,Allowed,已允许
+DocType: Workflow Transition,Allowed,允许角色
 apps/frappe/frappe/core/doctype/doctype/doctype.py +370,There can be only one Fold in a form,一个表单只能有一个折叠
 apps/frappe/frappe/website/doctype/website_settings/website_settings.py +23,Invalid Home Page,无效的主页
 apps/frappe/frappe/public/js/frappe/views/reports/grid_report.js +170,Reset Filters,重设过滤器
@@ -2034,6 +2034,9 @@ apps/frappe/frappe/public/js/frappe/views/communication.js +18,Send,发送
 apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +574,Save As,另存为
 apps/frappe/frappe/public/js/frappe/request.js +75,The resource you are looking for is not available,您找的资源不存在
 apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +7,Like,像
+DocType: Workflow Document State,State,状态
+DocType: Workflow Transition,State,状态
+DocType: Workflow Transition,Action,操作
 ,WAN,万
 ,YI,亿
 ,YUAN,圆
