@@ -1650,7 +1650,7 @@ apps/frappe/frappe/workflow/doctype/workflow/workflow.py +38,Created Custom Fiel
 DocType: System Settings,Time Zone,时区
 DocType: Print Settings,Compact Item Print,紧凑型项目打印
 apps/frappe/frappe/core/page/user_permissions/user_permissions.js +31,A user can be permitted to multiple records of the same DocType.,一个用户可以被授权同一DocType(文档类型)的多条记录。
-DocType: Workflow State,Home,家
+DocType: Workflow State,Home,根
 DocType: Workflow State,question-sign,question-sign
 DocType: Email Account,Add Signature,添加签名
 apps/frappe/frappe/email/doctype/email_unsubscribe/email_unsubscribe.py +38,Left this conversation,离开了这个谈话
@@ -2037,6 +2037,8 @@ apps/frappe/frappe/public/js/frappe/ui/filters/edit_filter.html +7,Like,像
 DocType: Workflow Document State,State,状态
 DocType: Workflow Transition,State,状态
 DocType: Workflow Transition,Action,操作
+apps/frappe/frappe/core/doctype/file/file.py +239,Attachments,附件
+apps/frappe/frappe/core/doctype/file/file.py +231,Home,根目录
 ,WAN,万
 ,YI,亿
 ,YUAN,圆
