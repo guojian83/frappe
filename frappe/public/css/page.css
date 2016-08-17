@@ -20,7 +20,7 @@
 }
 @media (min-width: 767px) {
   .page-body {
-    overflow-x: hidden;
+    overflow: hidden;
     min-height: calc(60vh);
   }
 }
