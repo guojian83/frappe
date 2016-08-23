@@ -2039,6 +2039,10 @@ DocType: Workflow Transition,State,状态
 DocType: Workflow Transition,Action,操作
 apps/frappe/frappe/core/doctype/file/file.py +239,Attachments,附件
 apps/frappe/frappe/core/doctype/file/file.py +231,Home,根目录
+DocType: Print Settings,Send document web view link in email,在邮件中发送链接
+DocType: Print Settings,Print with letterhead,使用信抬头
+DocType: Print Settings,Allow Print for Draft,允许打印草稿文档
+DocType: Print Settings,Allow Print for Cancelled,允许打印取消文档
 ,WAN,万
 ,YI,亿
 ,YUAN,圆
